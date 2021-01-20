@@ -1,0 +1,268 @@
+body{
+    margin: 0;
+}
+.firstSec{
+    display: flex;
+    flex-direction: row;
+}
+.part1S1{
+    width: 65%;
+    box-shadow: 0 0 20px 10px #ccc;
+    margin: 3em;
+    box-sizing: border-box;
+    padding: 3em;
+    padding-bottom: 0;
+}
+.part1S1 > h1{
+    font-size: 5em;
+    margin-top: 0;
+    padding-top: 0;
+    clear: both;
+    color: #333;
+    display: flex;
+}
+.part1S1 > hr{
+    float: left;
+    width: 85px;
+    background-color: #ccc;
+    height: 1px;
+    border: none;
+}
+.part1S1 > p{
+    color: gray;
+    width: 40%;
+}
+.horse{
+    width: 300px;
+    height: 300px;
+    float: right;
+    align-self: flex-start;
+    position: relative;
+    opacity: 0.3;
+    top: -10em;
+    right: 0;
+    object-fit: cover;
+}
+
+.part1S1 > button{
+    background-color: white;
+    border: solid #555 2px;
+    border-radius: 25px;
+    width: 8rem;
+    height: 3rem;
+    margin-top: 5em;
+    text-transform: uppercase;
+    padding: 0.5em;
+    font-size: 0.6em;
+    box-sizing: border-box;
+    color: #333;
+    outline: none;
+    margin-bottom: 1em;
+}
+
+.horse2{
+    width: 55%;
+    height: 60%;
+    float: right;
+    position: absolute;
+    z-index: 55555;
+    top: 50%;
+    left: 48%;
+    margin-top: -50px;
+    margin-left: -100px;
+    object-fit: cover;
+}
+.secondSec{
+    margin: 3em;
+    margin-top: 6em;
+    box-sizing: border-box;
+    margin-bottom: 8em;
+    clear: both;
+}
+.secondSec > hr{
+    width: 75px;
+    float: center;
+    margin-top: 5em;
+}
+.secondSec > h1{
+    text-align: center;
+    font-size: 3em;
+    margin-top: 0;
+    color: #333;
+}
+.images{
+    float: center;
+   
+}
+.images > .image{
+    float: left;
+    margin: 5px;
+    box-sizing: border-box;
+    position: relative; 
+}
+.images > .image > img{
+    float: left;
+    width:  345px;
+    height: 200px;
+    object-fit: cover;
+}
+.images > .image > .di{
+    float: left;
+    width:  530px;
+    height: 410px;
+    object-fit: cover;
+    
+}
+.textsImg > h1{
+    margin-top: 0;
+    font-size: 2vmax;
+}
+.textsImg > h5{
+    margin-bottom: 0;
+    font-size: 1vmax;
+    text-transform: uppercase;
+}
+.secondSec > .images >  .image > .textsImg{
+    position: absolute;
+    bottom: 00%;
+    padding-left: 1em;
+    color: white;
+
+}
+.sec3{
+    background: url("images/mount.jpg");
+    clear: both;
+    color:white;
+    margin-top: 3em;
+    padding: 3em;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    padding-top: 1em;
+}
+
+.sec3 > .mainDivS3{
+    justify-self: center;
+    align-self: center;
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 3em;
+}
+.sec3 > .land{
+    justify-self: flex-start;
+    align-self: flex-end;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 5em;
+    color: #666;
+
+}
+.sec3 > .terms{
+    margin-left: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 5em; 
+    color: #666;
+}
+.titleSec3{
+    font-size: 3em;
+    margin-bottom: 0;
+}
+.descSec3{
+    margin-top: 0;
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 4em;
+}
+.inputName > input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 0.8em;
+    margin-bottom: 0.3em;
+}
+.inputName > label{
+    font-size: 0.8em;
+}
+.inputName{
+    border-bottom: solid #666 1px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 2em;
+    text-align: left;
+}
+.btnForm{
+    background-color: #333;
+    border: none;
+    border-radius: 25px;
+    width: 7rem;
+    height: 2.5rem;
+    margin-top: 5em;
+    text-transform: uppercase;
+    padding: 0.5em;
+    font-size: 0.8em;
+    box-sizing: border-box;
+    color: white;
+    outline: none;
+    margin-bottom: 1em;
+}
+@media (max-width: 768px){
+    .images > .image > .di{
+        float: left;
+        width:  100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .images > .image > img{
+        float: left;
+        width:  100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    .secondSec{
+        margin: 1em;
+    }
+    .firstSec{
+        width: 100%;
+    }
+    .part1S1 > .horse2 , .horse{
+        display: none;
+    }
+    .part1S1{
+        width: 100%;
+        padding: 1em;
+        margin: 0em;
+    }
+    .part1S1 > p{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    .images > .image > .di{
+        float: left;
+        width:  100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    .images > .image > img{
+        float: left;
+        width:  100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    .secondSec{
+        margin: 1em;
+    }
+}
+@media (min-height: 1000px){
+    .part1S1 > .horse2{
+        top:25%;
+        height: 35%;
+    }
+}
