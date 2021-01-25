@@ -1,92 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Potato</title>
-        <link href="task2.css" rel="stylesheet">
-        <meta charset="UTF-16">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <section class="firstSec">
-            <div class="part1S1">
-                <hr>
-                <h1>Stay</h1>
-                <img class="horse" src="images/horse.png">
-                <p>In a land of myth and legend, where fire meets ice, surrounded by the hot springs, glacier, and the mystical 
-                    glow of Northern Lights Minarc Archiritects created a new Hotel in Iceland, near Thingvellir national park that
-                    reflects the natural beautyof the region with clarity and simplicity. ION.
-                </p>
-                <img class="horse2" src="images/h2.jpg">
-                <button>Learn More</button>
-            </div>
-        </section>
-        <section class="secondSec">
-            <hr>
-            <h1>Epic Spots</h1>
-            <div class="images">
-                <div class="image image1">
-                    <div class="textsImg">
-                        <h5 class="title">image-1</h5>
-                        <h1 class="decription">Island</h1>
-                    </div>
-                    <img class="di"src="images/6.jpeg">
-                </div>
-                <div class="image">
-                    <div class="textsImg">
-                        <h5 class="title">image-2</h5>
-                        <h1 class="decription">Snow</h1>
-                    </div>
-                    <img src="images/3.jpg">
-                </div>
-                <div class="image">
-                    <div class="textsImg">
-                        <h5 class="title">image-3</h5>
-                        <h1 class="decription">Villages and Mountains</h1>
-                    </div>
-                    <img src="images/2.jpeg">
-                </div>
-                <div class="image">
-                    <div class="textsImg">
-                        <h5 class="title">image-4</h5>
-                        <h1 class="decription">Forest</h1>
-                    </div>
-                    <img src="images/4.jpg">
-                </div>
-                <div class="image">
-                    <div class="textsImg">
-                        <h5 class="title">image-5</h5>
-                        <h1 class="decription">Sea & Harbor</h1>
-                    </div>
-                    <img src="images/1.jpg">
-                </div>
-                <div style="clear: both;"></div>
-            </div>
-        </section>
-        <section class="sec3">
-            <div class="mainDivS3">
-                <div class="textsSec3">
-                    <h1 class="titleSec3">Get your guide</h1>
-                    <h5 class="descSec3">Guide to conqauer land of fire & ice </h5>
-                </div>
-                <form>
-                    <div class="inputName">
-                        <label for="name">NAME</label>
-                        <input type="text" name="name" id="name">
-                    </div>
-                    <div class="inputName">
-                        <label for="name">E-MAIL</label>
-                        <input type="email" name="email" id="email"> 
-                    </div> 
-                    <button class="btnForm">SUBMIT</button>
-                </form>
-            </div>
-            
-            <div class="land">
-                <h5>Land of Fire & Icd 2016</h5>
-            </div>
-            <div class="terms">
-                <h5>Terms & Conditions</h5>
-            </div>
-        </section>
-    </body>
+  <head>
+    <title>Potato</title>
+    <link href="task2.css" rel="stylesheet" />
+    <meta charset="UTF-16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <section class="section section--flex">
+      <div class="about about--shadow">
+        <hr
+          class="separator separator--small separator--gray separator--position-left"
+        />
+        <h1 class="section__title title--size-large title--color-dark">Stay</h1>
+        <img class="image section__image__background" src="images/horse.png" />
+        <p class="about__description">
+          In a land of myth and legend, where fire meets ice, surrounded by the
+          hot springs, glacier, and the mystical glow of Northern Lights Minarc
+          Archiritects created a new Hotel in Iceland, near Thingvellir national
+          park that reflects the natural beautyof the region with clarity and
+          simplicity. ION.
+        </p>
+        <img class="image section__image__front" src="images/h2.jpg" />
+        <button
+          class="btn btn--large btn--rounded btn--border-gray btn--light btn--uppercase"
+        >
+          Learn More
+        </button>
+      </div>
+    </section>
+    <section class="section secondSec">
+      <hr
+        class="separator separator--small separator--gray separator--position-center"
+      />
+      <h1
+        class="section__title title--size-meduim title--color-dark title--position-center"
+      >
+        Epic Spots
+      </h1>
+      <div class="images">
+        <div class="image">
+          <div class="image__text">
+            <h5 class="image__title">image-1</h5>
+            <h1 class="image__description">Island</h1>
+          </div>
+          <img class="image__base" src="images/6.jpeg" />
+        </div>
+        <div class="image">
+          <div class="image__text">
+            <h5 class="image__title">image-2</h5>
+            <h1 class="image__description">Snow</h1>
+          </div>
+          <img src="images/3.jpg" />
+        </div>
+        <div class="image">
+          <div class="image__text">
+            <h5 class="image__title">image-3</h5>
+            <h1 class="image__description">Villages and Mountains</h1>
+          </div>
+          <img src="images/2.jpeg" />
+        </div>
+        <div class="image">
+          <div class="image__text">
+            <h5 class="image__title">image-4</h5>
+            <h1 class="image__description">Forest</h1>
+          </div>
+          <img src="images/4.jpg" />
+        </div>
+        <div class="image">
+          <div class="image__text">
+            <h5 class="image__title">image-5</h5>
+            <h1 class="image__description">Sea & Harbor</h1>
+          </div>
+          <img src="images/1.jpg" />
+        </div>
+        <div style="clear: both"></div>
+      </div>
+    </section>
+    <section
+      class="section section--flex section__form section__form--background-img"
+    >
+      <form class="guide">
+        <h1
+          class="section__title title--size-meduim title--color-light title--position-center guide__title"
+        >
+          Get your guide
+        </h1>
+        <h5 class="guide__description">Guide to conqauer land of fire & ice</h5>
+        <div class="guide__input">
+          <label for="name">NAME</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="guide__input">
+          <label for="name">E-MAIL</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <button
+          class="btn btn--large btn--rounded btn--border-none btn--darkgray btn--uppercase"
+        >
+          SUBMIT
+        </button>
+      </form>
+      <div class="land">
+        <h5>Land of Fire & Icd 2016</h5>
+      </div>
+      <div class="terms">
+        <h5>Terms & Conditions</h5>
+      </div>
+    </section>
+  </body>
 </html>
