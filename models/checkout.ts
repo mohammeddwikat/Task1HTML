@@ -1,5 +1,4 @@
-import mongoose, { Schema, Document, Model, model } from "mongoose"
-const GUID = require('mongoose-guid');
+import { Schema, Document, Model, model } from "mongoose"
 
 export interface ICheckout extends Document {
   id: string;
@@ -18,7 +17,7 @@ export interface ICheckout extends Document {
 
 export const CheckoutSchema: Schema = new Schema({
   id: {
-    type: GUID.type,
+    type: String,
     unique: true,
   },
   name: {

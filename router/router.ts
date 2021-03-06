@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import { ICategory } from "../models/categories";
 import { IProduct } from "../models/products";
 import { ICheckout } from "../models/checkout";
+import { Guid } from 'js-guid';
 
 
 const GUID = require('mongoose-guid');
@@ -219,7 +220,9 @@ router.get("/checkout", async(req: Request, res: Response) => {
  */
 router.post("/checkout", jsonParser, async(req: Request, res: Response) => {  
   const checkout = new Checkout({
-    ...req.body
+    
+    ...req.body,
+    id : Guid.newGuid()
   });
   try {
     const newCheckout = await checkout.save();
