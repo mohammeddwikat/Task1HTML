@@ -48,4 +48,6 @@ export const CheckoutSchema: Schema = new Schema({
 });
 
 const Checkout: Model<ICheckout> = model<ICheckout>("Checkout", CheckoutSchema);
-module.exports = Checkout;
+module.exports = Checkout
+
+
