@@ -4,7 +4,6 @@ import { Guid } from "js-guid";
 
 const jsonParser = express.json();
 const checkoutRouter = express.Router();
-// const Checkout = require("../models").Checkout;
 
 /**Send all checkouts that stored in the database */
 checkoutRouter.get("/", async (req: Request, res: Response) => {

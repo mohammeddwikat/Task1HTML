@@ -13,6 +13,7 @@ const router = require("../router");
 app.use("/task/category", router.categoryRouter);
 app.use("/task/product", router.productRouter);
 app.use("/task/checkout", router.checkoutRouter);
+app.use("/task/user", router.userRouter);
 
 app.listen(port, () => {
   console.log("Application Running on port :" + port);
